@@ -1,0 +1,15 @@
+README.md
+setup.py
+vestib/__init__.py
+vestib/cli.py
+vestib.egg-info/PKG-INFO
+vestib.egg-info/SOURCES.txt
+vestib.egg-info/dependency_links.txt
+vestib.egg-info/entry_points.txt
+vestib.egg-info/requires.txt
+vestib.egg-info/top_level.txt
+vestib/commands/__init__.py
+vestib/commands/framesheet.py
+vestib/commands/list_files.py
+vestib/commands/sort_vid.py
+vestib/commands/sync.py
