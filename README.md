@@ -49,3 +49,12 @@ vestib sync --source /path/to/source --target /path/to/target
 ```bash
 vestib sort_vid --input /path/to/videos
 ```
+📄 List files in the current directory (optional extension filter)
+
+```bash
+vestib list_file --ext .mp4 -o output.txt
+```
+🧾 Extract frame numbers into a CSV
+```yami
+vestib extract_frame --output frames.csv --outdir /path/to/save/frames
+```
