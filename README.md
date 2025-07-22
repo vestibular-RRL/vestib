@@ -11,7 +11,13 @@ A streamlined command-line tool built to assist vestibular research workflows. *
 
 - 🎥 **Video Sorter (`sort_vid`)**  
   Renames and organizes videos depending on whether they contain 1-eye or 2-eye footage.
+- 📄 **List Files (`list_file`)**  
+  Generate a `.txt` file listing all files in the current directory.  
+  Use `--ext` to filter by file extension and `-o` to specify the output file.
 
+- 🧾 **Extract Frame (`extract_frame`)**  
+  Create a `.csv` file listing frame numbers.  
+  Use `--output` for the CSV file path and `--outdir` to define where frames are saved.
 ---
 
 ## 📦 Dependencies
@@ -48,4 +54,13 @@ vestib sync --source /path/to/source --target /path/to/target
 
 ```bash
 vestib sort_vid --input /path/to/videos
+```
+📄 List files in the current directory (optional extension filter)
+
+```bash
+vestib list_file --ext .mp4 -o output.txt
+```
+🧾 Extract frame numbers into a CSV
+```yami
+vestib extract_frame --output frames.csv --outdir /path/to/save/frames
 ```
