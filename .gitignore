@@ -1,2 +1,5 @@
 # Bytecode and cache
 __pycache__/
+/vestib.egg-info
+/vestib.egg-info
+*.txt

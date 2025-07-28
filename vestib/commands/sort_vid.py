@@ -15,8 +15,16 @@ def sort_vid(folder):
     video_files = get_video_files(folder)
     
     for video_file in video_files:
+        the_last_char = video_file[-1] 
+        if the_last_char .isdigit() and (the_last_char  == '1' or the_last_char  == '2'):
+                print("Last character is '1' or '2'. Skipping video opening.")
+                continue
+        else:
+            print(f"File: {video_file} | Last character is '{the_last_char}'. Proceeding to open video...")
+
         video_path = os.path.join(folder, video_file)
         cap = cv2.VideoCapture(video_path)
+    
         
         if not cap.isOpened():
             print(f"Failed to open {video_file}")
