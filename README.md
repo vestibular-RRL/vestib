@@ -58,7 +58,7 @@ vestib sort_vid --input /path/to/videos
 📄 List files in the current directory (optional extension filter)
 
 ```bash
-vestib list_file --ext .mp4 -o output.txt
+vestib_list_files --ext .csv -o output.txt
 ```
 🧾 Extract frame numbers into a CSV
 ```yami
